@@ -78,7 +78,7 @@ for (const i of myArray) {
 // EXO FizzBuzz
 // wrtie a fun name getFizzBuzz which take a num and if the num is div by 3 then print Fizz and if the num is div by 5 then return buzz and if the num is div by both then print Fizzbuzz otherwise it should print the num itself
 
-const getFizzBuzz = (num) => {
+/* const getFizzBuzz = (num) => {
   if (num % 3 === 0 && num % 5 === 0) {
     console.log("FizzBuz");
   } else if (num % 3 === 0) {
@@ -95,3 +95,47 @@ getFizzBuzz(6);
 getFizzBuzz(9);
 getFizzBuzz(12);
 getFizzBuzz(15);
+ */
+
+
+
+
+
+/*  Rock beats Scissors → Rock crushes Scissors
+
+Scissors beats Paper → Scissors cut Paper
+
+Paper beats Rock  
+
+const ourGame = (a , b ) => 
+{
+ 
+ if( a ==="rock" && b === "scissors" )
+ {
+    console.log("A has won");
+ }
+ else if (a =="scissors" && b =="Paper")
+ 
+ {
+   console.log("b has won");
+ }
+
+ else if 
+
+}
+ */
+
+// Find largest number 
+/*
+
+Write a function called findLargest that takes an array of numbers and returns the largest one. No Math.max allowed. Use a loop.
+
+Test with: [3, 1, 4, 1, 5, 9, 2, 6]
+
+*/
+
+myArray = [3, 1, 4, 1, 5, 9, 2, 6];
+const findLargest = (myArray) =>
+{
+ 
+}
