@@ -9,5 +9,33 @@ Count how many guesses they took
 Congratulate them when correct
 */
 
-radnom 
-const mYgame = () 
+const generateRandomNum = (num) =>
+{
+   num = generateRandomNum(100); 
+
+}
+
+
+const userInput = (enternum) =>
+{
+    enternum = prompt ("enter a num "); 
+
+    if(enternum = num )
+    {
+        alert("correct")
+    }
+    else if (enternum>  num)
+    {
+        alert("too high");
+
+    }
+    else
+    {
+     alert("too low");
+    }
+
+
+    
+    }
+
+  
