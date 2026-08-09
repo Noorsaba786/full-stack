@@ -9,33 +9,31 @@ Count how many guesses they took
 Congratulate them when correct
 */
 
-const generateRandomNum = (num) =>
-{
-   num = generateRandomNum(100); 
+// Math.floor (math.random() * max - min  +1) + min
+//  20 , 200
+// Math.flooe (math.random() * 200 - 20 + 1 ) + 20
 
+// Math.flooe (math.random() * 181 ) + 20
+
+// Math.flooe (math.random() * 200
+
+const secreteNumber = 20;
+
+let count = 0;
+let guess = false;
+
+while (guess == false) {
+  let guessed = Number(prompt("enter a num"));
+  count++;
+
+  if (guessed == secreteNumber) {
+    guess = true;
+    alert("you won congrats dearrr");
+  } else if (guessed > secreteNumber) {
+    alert("its tooo high");
+  } else if (guessed < secreteNumber) {
+    alert("its too low ");
+  } else {
+    alert("please wrtie a valide number");
+  }
 }
-
-
-const userInput = (enternum) =>
-{
-    enternum = prompt ("enter a num "); 
-
-    if(enternum = num )
-    {
-        alert("correct")
-    }
-    else if (enternum>  num)
-    {
-        alert("too high");
-
-    }
-    else
-    {
-     alert("too low");
-    }
-
-
-    
-    }
-
-  
