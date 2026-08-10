@@ -13,11 +13,11 @@ Congratulate them when correct
 //  20 , 200
 // Math.flooe (math.random() * 200 - 20 + 1 ) + 20
 
-// Math.flooe (math.random() * 181 ) + 20
+// Math.floor (math.random() * 181 ) + 20
 
 // Math.flooe (math.random() * 200
 
-const secreteNumber = 20;
+const secreteNumber = Math.floor(Math.random() * 100) + 1;
 
 let count = 0;
 let guess = false;
