@@ -46,9 +46,9 @@ const sayHi = (name) => {
 
 dotwice(sayHi); */
 
-const makeGreeter = (greeting) => {
-  return (name) => {
-    return greeting + " " + name;
+const makeGreeter = (greeting) => { // hello 
+  return (name) => { // 
+    return greeting + " " + name; // hello 
   };
 };
 
