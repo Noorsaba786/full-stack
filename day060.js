@@ -25,3 +25,13 @@ console.log(sumarray(myArray, myArray.length - 1));
 //  3 + 1+ 5+2+  sumarray (myarray , -1)
 //  3 + 1+ 5+2+0 
 //backward  0 + 2 + 5 + 1 + 3 = 11
+
+
+
+// another way
+
+
+const sumArray = (arr) => {
+  if (arr.length === 0) return 0
+  return arr[0] + sumArray(arr.slice(1))
+}
