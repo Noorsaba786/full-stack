@@ -1,5 +1,5 @@
 // object exercise
-
+// adding and updating values:
 const user = {
   name: "Noorsaba",
   age: 55,
