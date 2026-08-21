@@ -17,3 +17,4 @@ const {
 
 console.log(name);
 console.log(city);
+console.log(country);
