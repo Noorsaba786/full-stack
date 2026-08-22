@@ -1,103 +1,41 @@
-// object
-/* 
-const user = {
-  name: "Muzhgan",
-  id: 12,
-};
-
-user.id = 18;
-console.log(user.name);
-console["log"](user.id); // another way of writing conosle.log with braket notation
+/* Mini project. Build a simple student grade book:
+Object with student name and array of grades
+Method to add a grade
+Method to get average grade
+Method to get highest grade
+Method to get lowest grade
  */
+const student = {
+  name: "Noorsaba",
+  grades: [85, 90, 78],
 
-/* 
+  // Adds a grade to the array
+  addGrade: function (grade) {
+    this.grades.push(grade);
+  },
 
-Exercise 2:
-Destructure the product object into separate variables in one line. Log them all.
+  // Calculates the average of all grades
+  getAverage: function () {
+    let sum = 0;
+    for (const num of this.grades) {
+      sum += num;
+    }
+    return sum / this.grades.length;
+  },
 
-Exercise 3:
-Write a function called getProductInfo that takes a product object, destructures it in the parameters, and returns a string like:
-"Laptop costs $999 - Electronics - In Stock"
+  // Finds the highest grade
+  getHighest: function () {
+    return Math.max(...this.grades);
+  },
 
-Exercise 4:
-Create two objects user1 and user2. Merge them into one object using the spread operator. */
-
-//Exercise 1:
-/* Create an object called product with: name, price, category, inStock. Log each property using dot notation.
- */
-
-/* const product = {
-  name: "Laptop",
-  price: 999,
-  catagory: "Electronic",
-  inStock: true,
-};
- */
-/* console.log(product.name);
-console.log(product.price);
-console.log(product.catagory);
-console.log(product.inStock); */
-
-/* 
-Exercise 2:
-Destructure the product object into separate variables in one line. Log them all.
- */
-
-/* const { name, price, catagory, inStock } = product; */
-
-/* 
-Exercise 3:
-Write a function called getProductInfo that takes a product object, destructures it in the parameters, and returns a string like:
-"Laptop costs $999 - Electronics - In Stock" */
-/* const getProductInfo = ({ name, price, catagory, inStock }) => {
-  return `${name} cost  ${price} - ${catagory} ${inStock ? "inStock" : "Notinstock"} `;
-};
-
-console.log(getProductInfo(product)); */
-
-// Exercise 4:
-// Create two objects user1 and user2. Merge them into one object using the spread operator. */
-
-/* const user1 = {
-  name: "muzhgan",
-  id: 1,
-};
-
-const user2 = {
-  myName: "saba",
-  id: 2002,
-};
-
-const mergeUsers = { ...user1, ...user2 };
-console.log(mergeUsers);
- */
-
-//Nested object
-/* 
-const myObj = {
-  name: "Muzhgan jan",
-  id: 1,
-  address: {
-    city: "kabul",
-    coutry: "afghanistan",
+  // Finds the lowest grade
+  getLowest: function () {
+    return Math.min(...this.grades);
   },
 };
 
-const {
-  name,
-  id,
-  address: { city, coutry },
-} = myObj;
+student.addGrade(95);
 
-console.log(name, city, coutry);
- */
-
-const user = {
-  name: "muzhgan",
-  id: 1,
-  myfun: () => {
-    return "heyy ";
-  },
-};
-
-console.log(user.myfun());
+console.log(student.getAverage()); // Output: 87
+console.log(student.getHighest()); // Output: 95
+console.log(student.getLowest()); // Output: 78
