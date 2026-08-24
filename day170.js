@@ -7,7 +7,7 @@ const elements = [
   { id: 4, tag: "p", text: "Another Paragraph" },
 ];
 
-const takeH = elements.filter((n) => n.tag == "h1");
+const takeH = elements.filter((n) => n.tag === "h1");
 console.log(takeH);
 
 const content = elements.map((n) => n.text);
