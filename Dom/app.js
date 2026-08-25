@@ -24,7 +24,7 @@ button.addEventListener("click", () => {
   const elemets = document.createElement("li");
   elemets.textContent = myElement;
 
-  // create new button of delete
+  // create new button of delete with createElement
   const deletebtn = document.createElement("button");
   deletebtn.textContent = "Delete";
 
