@@ -11,7 +11,7 @@ const addTask = () => {
   list.appendChild(li);
   input.value = "";
 };
-
+// this is the  eventListener
 button.addEventListener("click", addTask);
 
 input.addEventListener("keydown", (event) => {
