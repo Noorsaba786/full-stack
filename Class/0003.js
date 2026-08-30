@@ -14,6 +14,7 @@ class User {
   }
 }
 
+// the example for using class
 const user1 = new User("muzhgan janm", 12);
 const user2 = new User("saba jan", 11);
 const user3 = new User("muqadas jan", 19);
