@@ -5,7 +5,7 @@ class User {
     this.name = name;
     this.age = age;
   }
-
+  // here i wrote the function greet ()
   greet() {
     return "hello my name is " + this.name + " and i have " + this.age;
   }
