@@ -11,6 +11,7 @@ class User {
   }
 }
 
+//User 1
 const user1 = new User("saba", 20);
 
 const user2 = new User("noor", 12);
