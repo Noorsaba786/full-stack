@@ -14,6 +14,7 @@ class User {
 //User 1
 const user1 = new User("saba", 20);
 
+//User 2
 const user2 = new User("noor", 12);
 console.log(user1.greet());
 
