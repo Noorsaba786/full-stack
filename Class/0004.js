@@ -6,6 +6,7 @@ class User {
     this.age = age;
   }
   // here i wrote the function greet ()
+  // and i return its msg
   greet() {
     return "hello my name is " + this.name + " and i have " + this.age;
   }
@@ -14,7 +15,6 @@ class User {
 //User 1
 const user1 = new User("saba", 20);
 
-//User 2
 const user2 = new User("noor", 12);
 console.log(user1.greet());
 
