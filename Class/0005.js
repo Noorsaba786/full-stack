@@ -16,6 +16,7 @@ class Dog extends Animal {
   }
 }
 
+// object
 const dog = new Dog("Rockey");
 console.log(dog.speak());
 console.log(dog.bark());
