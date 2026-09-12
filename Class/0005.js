@@ -9,7 +9,7 @@ class Animal {
     return "my " + this.name + " makes a sound";
   }
 }
-
+// here is the class of dog
 class Dog extends Animal {
   bark() {
     return "well here " + this.name + " barks ";
