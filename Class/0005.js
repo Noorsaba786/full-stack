@@ -5,10 +5,12 @@ class Animal {
   constructor(name) {
     this.name = name;
   }
+  // speak fucniton
   speak() {
     return "my " + this.name + " makes a sound";
   }
 }
+
 // here is the class of dog
 class Dog extends Animal {
   bark() {
