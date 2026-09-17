@@ -1,6 +1,7 @@
 // inheritance
 // when a class extend another class methods and properties automaticallly thats call inheritance
 // class animl
+
 class Animal {
   constructor(name) {
     this.name = name;
@@ -18,6 +19,7 @@ class Dog extends Animal {
   }
 }
 
+// the name of the object is dog
 // object created here
 const dog = new Dog("Rockey");
 console.log(dog.speak());
