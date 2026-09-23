@@ -22,7 +22,6 @@ class Dog extends Animal {
   }
 }
 
-// the name of the object is dog
 // object created here
 const dog = new Dog("Rockey");
 console.log(dog.speak());
