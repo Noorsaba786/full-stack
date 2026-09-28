@@ -3,7 +3,7 @@ class User {
     this.name = name;
     this.age = age;
   }
-
+  // the  is adult function
   isAdult() {
     return this.age >= 19;
   }
@@ -14,7 +14,7 @@ class User {
   }
 }
 
-// the example for using class
+// user 1
 
 const user1 = new User("muzhgan janm", 12);
 const user2 = new User("saba jan", 11);
