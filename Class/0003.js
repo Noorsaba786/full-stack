@@ -14,6 +14,7 @@ class User {
   }
 }
 
+//user 1 example
 // user 1
 
 const user1 = new User("muzhgan janm", 12);
